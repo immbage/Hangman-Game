@@ -1,0 +1,111 @@
+:root {
+  --color1: #E3FDFD;
+  --color2: #CBF1F5;
+  --color3: #A6E3E9;
+  --color4: #71C9CE;
+  --color5: #5b9da1;
+}
+
+body {
+  background-color: var(--color3);
+  color: black;
+}
+
+  .input-text {
+    border: none;
+    display: block;
+    width: 100%;
+    background-color: var(--color1);
+    border-bottom: 2px solid var(--color4);
+    transition: box-shadow 0.5s;
+  }
+  .input-text:focus {
+    outline: none;
+    border-bottom: 2px solid;
+
+    box-shadow: 5px 5px 10px -6px var(--color4);
+    border-color: var(--color4);
+  }
+
+  .mainButton {
+    background-color: var(--color4)!important;
+    color: white;
+    box-shadow: 2px 2px 2px black;
+  }
+  
+  .mainButton:hover {
+    background-color: var(--color1)!important;
+    color: var(--color4);
+    box-shadow: 3px 3px black;
+
+  }
+
+
+.nametag {
+  font-size: 12px;
+  background: var(--color4);
+  border-color: var(--color4)!important;
+  margin-top: 100px!important;
+  box-shadow: 2px 2px 2px 2px black;
+  border-radius: 0.5rem;
+  color: white;
+
+}
+
+.nametag:hover {
+  background-color: var(--color1);
+  color: var(--color4);
+  cursor: pointer;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+
+}
+
+.nametag-big {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, 0);
+  z-index: 1;
+  background-color: var(--color4);
+  color: white;
+  min-width: 100px;
+  min-height: 100px;
+  box-shadow: 2px black;
+  border-radius: 0.5rem;
+
+}
+
+.shadow-box {
+  width: 100%;
+  position: absolute;
+  height: 150vh;
+  padding-top: 0;
+  background-color: var(--color1);
+  opacity: 0.87;
+  z-index: 1;
+}
+
+#about-card {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, 0);
+  z-index: 1;
+  color: var(--color1);
+  background-color: var(--color4);
+  border-radius: 0.5rem;
+  min-width: 100px;
+  min-height: 100px;
+}
+
+.playButton {
+  background-color: var(--color4)!important;
+  color: white;
+  box-shadow: 2px 2px 2px black;
+}
+.playButton:hover {
+  background-color: var(--color5)!important;
+  color: white;
+  box-shadow: 2px 2px 2px black;
+}

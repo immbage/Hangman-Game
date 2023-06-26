@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% block title %}
+<title>Select Character - Hangman</title>
+<link rel="stylesheet" href="/static/mainMenu.css">
+<style>
+    .box-content {
+        padding: 35px;
+        background-color: var(--color1);
+        box-shadow: 3px 3px 12px 3px #E3FDFF;
+        opacity: 1;
+    }
+</style>
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <div class="container text-center">
+        <p class="display-4 pb-3">What's Your Name?</p>
+    </div>
+    <div class="row justify-content-center box-content">
+        <div class="col-5 p-3">
+            <form action="" method="POST" class="p-4">
+                <div class="row">
+                    <div class="col p-3">
+                        <label for="">Name: </label>
+
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" name="username" required class="input-text mt-3" autocomplete="off">
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="container mt-5">
+                    <div class="row">
+                        <div class="col text-center">
+                            <div class="d-grid gap-2">
+                                <input type="submit" class="btn playButton btn-lg" value="Play">
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <input type="number" name="lives" value="{{lives}}" id="lives" hidden>
+                {% if categories %}
+                <input type="number" name="categories" value="{{categories}}" hidden>
+                {% else %}
+                <input type="number" name="categories" value="4" hidden>
+
+                {% endif %}
+            </form>
+        </div>
+
+    </div>
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+{% endblock %}

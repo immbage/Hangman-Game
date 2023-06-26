@@ -1,0 +1,82 @@
+{% extends 'base.html' %} {% block title %}
+<title>Hangman Games</title>
+<link rel="stylesheet" href="/static/mainMenu.css" />
+{% endblock %} {% block body %}
+<div class="shadow-box m-0 p-5 border" hidden id="boxHidden"></div>
+
+<div class="about-card m-0 p-5" id="about-card" hidden>
+  <p>About the game</p>
+  <p>
+    Hangman is a guessing game for two or more players. One player thinks of a word, phrase or
+    sentence and the other(s) tries to guess it by suggesting letters within a certain number of
+    guesses.
+  </p>
+</div>
+
+<div class="text-center pt-3">
+  <p class="" style="font-size: 90px">HANG_AN</p>
+  <p style="font-size: 35px; margin-top: 60px" class="">MAIN MENU</p>
+</div>
+
+<div class="container p-3">
+  <div class="row mt-5">
+    <div class="col">
+      <img src="/static/assets/picture_title.png" alt="Image_hangman" class="img-fluid" />
+    </div>
+    <div class="col">
+      <div class="container">
+        <div class="d-grid gap-3">
+          <a class="btn btn-lg mainButton" href="{{url_for('game')}}">Start Game</a>
+          <a class="btn-lg btn mainButton" id="option" href="/option">Option</a>
+
+          <a class="btn btn-lg mainButton" id="about">About Game</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <img src="/static/assets/picture_title.png" alt="Image_hangman" class="img-fluid" />
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col justify-content-center d-flex">
+      <div class="p-3 m-3 nametag" id="card">
+        <p class="text-center">Group Name:</p>
+
+        <p>Rahmandi Fitra Madenda</p>
+
+        <p>Immanuel Bagi Suranta</p>
+
+        <p>Septia Wahyu</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  var about = document.getElementById("about");
+  var card = document.getElementById("card");
+  var box = document.getElementById("boxHidden");
+  var about_box = document.getElementById("about-card");
+  var body = document.getElementsByTagName("body");
+  card.addEventListener("click", function () {
+    console.log("Hello World");
+    box.hidden = false;
+    card.classList.remove("nametag");
+    card.classList.add("nametag-big");
+  });
+  box.addEventListener("click", function () {
+    card.classList.remove("nametag-big");
+    card.classList.add("nametag");
+    box.hidden = true;
+    about_box.hidden = true;
+  });
+  about.addEventListener("click", function () {
+    box.hidden = false;
+
+    about_box.hidden = false;
+  });
+</script>
+
+{% endblock %}

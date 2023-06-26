@@ -1,0 +1,20 @@
+:root {
+    --color1: #E3FDFD;
+    --color2: #CBF1F5;
+    --color3: #A6E3E9;
+    --color4: #71C9CE;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.box-content {
+    padding: 35px;
+    background-color: var(--color1);
+    box-shadow: 3px 3px 20px 3px var(--color1);
+    opacity: 1;
+}

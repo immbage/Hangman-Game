@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="{{url_for('static', filename='game.css')}}" />
+
+  <title>Play - Hangman</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="mt-5">
+        <p>Hangman Games</p>
+        <p>Hello, {{username}}</p>
+        <input type="text" name="username" value="{{username}}" id="playerName" hidden />
+      </div>
+    </div>
+    <div class="wrapper">
+      <div id="buttons"></div>
+      <p id="catagoryName"></p>
+      <div id="hold">
+
+      </div>
+      <p id="mylives">
+      <div id="condition">
+
+      </div>
+      </p>
+      <p id="clue">Clue -</p>
+      <canvas id="stickman" class="">This Text will show if the Browser does NOT support HTML5 Canvas tag</canvas>
+      <div class="container">
+        <button id="hint">Hint</button>
+        <button id="reset">Play again</button>
+        <button id="home">Home</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="{{url_for('static', filename='game.js')}}"></script>
+  <!-- This is to send it to Javascript -->
+  <input type="number" name="lives" id="lives" value="{{lives}}" hidden />
+  <input type="number" name="categories" id="categories" value="{{categories}}" hidden />
+</body>
+
+</html>

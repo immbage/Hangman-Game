@@ -1,0 +1,14 @@
+colors: ["Red", "Orange", "Yellow", "Green", "Blue", "Purple",],
+hint: ["Color of blood", "same the name of one fruit", "Color of Lemon", "Color of grass", "Color of sea", "Color of grape"],
+
+countries: ["Indonesia", "Brazil", "Singapore,", "Japan", " Germany", "Australia",],
+hint: ["Country with the nickname "Emerald of the Equator"", "Samba country", "Merlion park located", "Mount Fuji located", "Hitler", "Kangaroo country"],
+
+animals: ["Cat", "Dog", "Butterfly", "Horse", "Lion", "Whale"],
+hint: ["Has a 95% gene similarity with a tiger", "Referred to as the most loyal animal to humans", "Caterpillars undergoing metamorphosis", "The most frequently ridden animal", "King of the Jungle", "Biggest mamal"],
+
+sports: ["Football", "Basketball", "Cricket", "Archery", "Badminton", "Boxing"],
+hint: ["Kick the ball into the goal", "Throw the ball into the basket", "Most popular sport in India", "Using bow", "Most popular sport in Indonesia", "Punch your opponent"],
+
+jobs: ["Police", "Pilot", "Doctor", "Firefighter", "Mechanic", "Scientist"],
+hint: ["catch criminals", "Plane driver", "heal people", "Extuingish the fire", "Fix a machine", "Experiment often"],
